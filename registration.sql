@@ -42,11 +42,10 @@ CREATE TABLE `comments` (
 INSERT INTO `comments` (`id`, `page_id`, `name`, `text_comment`) VALUES
 (1, 150, 'Рассуждения', 'Лично мне понравилось. Особенно Джеки его там не узнать. Не нужно смотреть только для критики или рассуждать. Просто смотрите этот фильм для удовольствия'),
 (7, 150, ' Marharyta Kurylenko', 'Гениально, этот фильм показывает тебе все твои скрытые возможности и откоывает глаза на многие вещи'),
-(16, 150, 'Елжан', 'ake careful note of your login details below and consider printing them for your own records.\r\n\r\nIf you enjoy our free hosting service, please consider upgrading your account to one of our Premium Hosting Plans and get a free .COM, NET or INFO domain name:\r\n\r\nOur premium paid hosting service has very large hosting plans using the industry leading cPanel X control panel, Sockets / Curl access, Massive CPU quotas, SMTP &amp; POP email accounts, no file size limits CGI / Python / Perl access, multiple versions of php (if you need an old version of php for your script, then you can have it with premium hosting ! and much more, all hosted on ultra fast servers.'),
 (18, 151, 'Елжан', 'Фильм классный по факту'),
 (19, 152, 'Алан', 'Фильмя херня по факту'),
 (20, 152, 'Не Алан', 'Фильм тема наврне'),
-(21, 153, 'Нала', 'Где ганджа?'),
+(21, 153, 'Нала', 'Где?'),
 (22, 153, 'Химик', 'Хороший сериал,стоит самому попробовать'),
 (23, 154, '1', 'конец света,но бельё надо сушить,тупорылость'),
 (24, 154, 'Born in SSSR', '10сезон, 20 серия...что то совсем не интересно, пол фильма в телефоне просидел, в вк новости и то интереснее читать было'),
@@ -119,7 +118,6 @@ INSERT INTO `users` (`id`, `login`, `pass`, `name`) VALUES
 (23, '123456', 'b320b77babacfc9134013e025bd2f875', '123456'),
 (24, 'elzhanxx', '786bf181b4e5ae3449cab51b6dae8a0a', '323232'),
 (25, 'Nuriman', 'b320b77babacfc9134013e025bd2f875', 'Nuriman'),
-(26, 'Maksgay', 'b320b77babacfc9134013e025bd2f875', 'Maks gay'),
 (27, 'Maksnatural', '786bf181b4e5ae3449cab51b6dae8a0a', 'Maksnatural'),
 (28, 'Alixander', '786bf181b4e5ae3449cab51b6dae8a0a', 'Alixander');
 
