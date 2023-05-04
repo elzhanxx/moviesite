@@ -4,8 +4,10 @@
 }
 
 body {
+    background-image: url('kinolenta.gif');
+    background-repeat: 1;
+    background-size: cover;
   font-size: 1.2em;
-  background-color: #fff;
   color: #555;
 }
 
@@ -52,15 +54,12 @@ ul li {
   padding: 0 0 4px 5px;
   line-height: 1.5em;
 }
-
-
 .header {
   background-color: darkslateblue;
-  height: 177px;
+  height: 275px;
   font-size: 0.8em;
-  margin-left: 0px;
-  margin-right: 0px;
   min-width: 900px;
+  text-align: center;
 }
 
 .main, .logo, .menubar, .site_content, .footer {
@@ -72,10 +71,10 @@ ul li {
   width: 880px;
   padding-bottom: 40px;
 }
-
 .logo h1, .logo h2 {
   font: normal 300% 'century gothic', arial, sans-serif;
   margin: 0 0 0 9px;
+
 }
 
 .logo_text h1, .logo_text h1 a, .logo_text h1 a:hover {
@@ -118,11 +117,7 @@ ul.menu li a {
 
 ul.menu li.selected a {
   color: #aeb002;
-}
-
-ul.menu li a:hover {
-  color: #e4ec04;
-}
+} 
 
 hr {
   border: solid 1px #f3f3f3;
@@ -131,15 +126,18 @@ hr {
 .site_content {
   width: 880px;
   overflow:hidden;
-  margin: 20px auto 0 auto;
   background-color: white;
+  padding: 30px;
 }
 
 .sidebar_container {
   float: right;;
   width: 224px;
 }
-
+.sidebar_container 	.btn:hover {
+  background-color: #1b8d69;
+  transition: 0.5s;
+}
 .sidebar {
   float: right;
   width: 222px;
@@ -159,8 +157,8 @@ hr {
   padding: 8px;
   background-color: white;
   cursor:pointer;
+  
 }
-
 form .exit .btn{
   padding: 8px;
   background-color: rgb(181, 70, 50);
@@ -191,7 +189,6 @@ form .exit .btn{
   float: right;
 }
 
-
 .content {
   text-align: left;
   width: 620px;
@@ -213,7 +210,13 @@ form .exit .btn{
   width: 22%;
   height: 200px;
 } 
+.films_block .animate {
+  transition: all 0.5s;
+}
 
+.films_block .animate:hover {
+  transform: scale(1.1);
+}
 .posts .posts_content {
   font-size: 0.8em;
 }
@@ -364,13 +367,24 @@ td img {
 .rating {
   font-weight: bold;
 }
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(239, 255, 231); /* Цвет фона */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
-
-
-
-
-
+.preloader-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000; /* Цвет текста */
+}
 
 .footer {
   width: 100%;
