@@ -4,13 +4,17 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="description" content="Кино мы смотрим здесь" />
-	<link rel="stylesheet" href="/kino/assets/css/style.css" />
+	<link rel="stylesheet" href="assets/css/style1.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 	<div class="main">
 		
 		<div class="header">
+		<div class="logotype">
+					<img src="logotype.png" alt="logo">
+				</div>
 			<div class="logo">
 				<div class="logo_text">
 					<h1><a href="/kino/index.php">КиноЗдесь</a></h1>
@@ -26,6 +30,7 @@
 					<li><a href="serials.php">Сериалы</a></li>
 					<li><a href="ratings.php">Рейтинг фильмов</a></li>
 					<li><a href="contacts.php">Контакты</a></li>
+					<li><a href="drop.php">Выгрузка</a></li>
 				</ul>
 
 			</div>
@@ -39,7 +44,7 @@
 				
 				<div class="sidebar">
 					<h2>Поиск</h2>
-					<form method="post" action="#" id="search_form" >
+					<form method="post" action="php/search.php" id="search_form" >
 						<input type="search" name="search_field" placeholder="ваш запрос" />
 						<input type="submit" class="btn" value="найти" />
 					</form>
@@ -47,6 +52,9 @@
 
 				<div class="sidebar">
 				<?php
+				error_reporting(0);
+				ini_set('display_errors', 0);
+
            		if($_COOKIE['user']==''):
            		?>
 						 <h2>Вход</h2>
@@ -55,7 +63,7 @@
 						<input type="password" name="pass" placeholder="пароль" />
 						<input type="submit" class="btn" value="вход" />
 						<div class="lables_passreg_text">
-							<span><a href="#">забыли пароль?</a></span> | <span><a href="/kino/registration.php">регистрация</a></span>
+						<span><a href="/kino/registration.php">регистрация</a></span>
 					</div>
 					</form>
 				<?php else:?>

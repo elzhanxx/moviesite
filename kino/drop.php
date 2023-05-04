@@ -14,26 +14,29 @@
         <div class="preloader-text">Загрузка...</div>
     </div>
 	<div class="main">				
+
 		<div class="header">		
 				<div class="logotype">
 					<img src="logotype.png" alt="logo">
 				</div>
 			<div class="logo">
+
 				<div class="logo_text">
 					<h1 data-tr="header"><a href="/kino/index.php"></a></h1>
 					<h2 data-tr="logo"></h2>
 				</div>
+
 			</div>
 			
 			<div class="menubar">
 				
 				<ul class="menu">
 					<li><a data-tr="main" href="index.php"></a></li>	
-					<li class="selected"><a data-tr="films" href="films.php"></a></li>
+					<li><a data-tr="films" href="films.php"></a></li>
 					<li><a  data-tr="serials" href="serials.php"></a></li>
 					<li><a data-tr="ratings" href="ratings.php"></a></li>
 					<li><a data-tr="contacts" href="contacts.php"></a></li>
-					<li><a data-tr="drop" href="drop.php"></a></li>
+					<li class="selected"><a data-tr="drop" href="drop.php"></a></li>
 				</ul>
 
 			</div>
@@ -51,11 +54,10 @@
 					</form>
 				</div>
 
-				<div class="sidebar">	
+				<div class="sidebar">				
 				<?php
 				error_reporting(0);
 				ini_set('display_errors', 0);
-
            		if($_COOKIE['user']==''):
            		?>
 						 <h2 data-tr="enter"></h2>
@@ -78,7 +80,7 @@
 		</div>
 
 				<div class="sidebar">
-					<h2 data-tr="news">Новости</h2>
+				<h2 data-tr="news">Новости</h2>
 					<span>04.03.2023</span>
 					<p data-tr="new">"На западном фронте без перемен" набрал больше 150 миллионов часов просмотров на Netflix</p>
 					<a data-tr="read" href="https://thecity.m24.ru/news/7272">читать</a>
@@ -99,56 +101,34 @@
 			<button id="ru">RU</button>
 			<button id="en">ENG</button>
 			<button id="kk">KAZ</button>
-				<div class="info_film">
-					<img class="animate" src="assets/img/vse.png">
-					<h2 data-tr="vse">Всё везде и сразу</h2>
-					<p data-tr="vseop">Китайская иммигрантка должна соединить разные версии себя, чтобы остановить того, кто намеревается навредить мультивселенной.</p>
-					<div class="button"><a data-tr="watch" href="vse.php">Смотреть</a></div>
-				</div>
+								
 
-				<div class="info_film">
-					<img class="animate" src="assets/img/zapad.png">
-					<h2 data-tr="zapad">На западном фронте без перемен</h2>
-					<p data-tr="zapadop">Германия, 1914 год. Пауль Боймер зачислен в армию, чтобы служить. Первые кадры с поля боя показывают ему ад на земле.</p>
-					<div class="button"><a data-tr="watch" href="zapad.php">Смотреть</a></div>
-				</div>
-
-				<div class="info_film">
-					<img class="animate" src="assets/img/ptitsa.png">
-					<h2 data-tr="ptitsa">Лакричная пицца</h2>
-					<p data-tr="ptitsaop">1973 год, долина Сан-Фернандо. Алане 25, она не занята ничем и будущего не ждёт.Гэри старается стать её бойфрендом,постоянно втягивая Алану в проблемы.</p>
-					<div class="button"><a data-tr="watch" href="ptitsa.php">Смотреть</a></div>
-				</div>
-
-				<div class="info_film">
-					<img class="animate" src="assets/img/reshenie.png">
-					<h2 data-tr="reshenie">Решение уйти</h2>
-					<p data-tr="reshenieop">Детектив, расследующий смерть мужчины в горах, в конце концов встречает и испытывает чувства к таинственной жене мертвого человека в ходе своего упорного расследования.</p>
-					<div class="button"><a data-tr="watch" href="reshenie.php">Смотреть</a></div>
-				</div>
-
-			
-
+			<p data-tr="dropop">На этой странице вы можете загрузить обложки фильмов и они будут отображаться на сайте.</p>
+			<div id="dropZone" class="drop-zone">
+        <span data-tr="droping" class="drop-text">Перетащите файлы сюда</span><br>
+        <input id="fileInput" type="file" multiple>
+    </div>
+	<div id="filePreview"></div>
+	<button id="uploadButton" disabled="">Выгрузить файлы</button>		
+	  </form>
+	  <div id="images">
+	  <script src="drop.js"></script>
 			</div>
-
 		</div>
-
-
-
-
-
-	<div class="footer">
+				</div>
+			<footer><div class="footer">
 		<p>
-			<a href="index.php">Главная</a> |
-			<a href="films.php">Фильмы</a> | 
-			<a href="serials.php">Сериалы</a> |
-			<a href="ratings.php">Рейтинг фильмов</a> |
-			<a href="contacts.php">Контакты</a>
+			<a data-tr="main" href="index.php">Главная</a> |
+			<a data-tr="films" href="films.php">Фильмы</a> | 
+			<a data-tr="serials" href="serials.php">Сериалы</a> |
+			<a data-tr="ratings" href="ratings.php">Рейтинг фильмов</a> |
+			<a data-tr="contacts" href="contacts.php">Контакты</a>
 		</p>
 		<p>Elzhan Industries 2023</p>
 	</div>
-
+</footer>
 	</div>
 	<script src="language.js"></script>
+
 </body>
 </html>
